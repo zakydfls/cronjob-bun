@@ -73,7 +73,7 @@ function isSameOrAfter(date1: Date, date2: Date): boolean {
 
 async function sendNotification(namaTangki: string, tanggal: Date) {
   const payload: StarsenderApiPayload = {
-    To: process.env.WA_TARGET_NUMBER || "081541193319",
+    To: process.env.WA_TARGET_NUMBER || "xxx",
     Body: `Reminder: Tangki "${namaTangki}" memerlukan sanitasi Cleaning Kaustik pada ${tanggal.toISOString().slice(0, 10)}.`,
     MessageType: "text",
   };
